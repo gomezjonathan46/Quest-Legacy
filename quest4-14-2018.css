@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('fonts/league_gothic-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/league_gothic-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+	url('fonts/league_gothic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('fonts/league_gothic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('fonts/league_gothic-webfont.svg#webfont3nLbXkSC') format('svg'); /* Legacy iOS */
+		}
+		
+body {
+        background: #000;
+        text-align: center;
+}
+
+.wrapper {
+       width: 660px;
+       margin: 0px auto;
+}
+
+nav a{
+       color: #D1BCA1;
+       font-family: 'LeagueGothic';
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 26px;
+       margin:-3px;
+       outline: none;
+       border: none;
+}
+
+nav a:hover {
+       color: #fff;
+}
+
+.review p{
+       font-size: 16px;
+       font-style: italic;
+       text-align: center;
+       margin-left: 100px;
+       margin-top: 24px;
+       width: 500px;
+}
+
+.pressLogo img{
+       margin-left: 40px;
+       margin-top: 6px;    
+}
+
+.pressLink {
+       margin-left: 40px;
+}
+
+.festList {
+       margin-left: 96px;
+}
+
+.indent {
+       margin-left: 50px;
+}
+
+h1 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       font-size: 120px;
+       line-height: 0px;
+}
+
+h1 a {
+       color: #fff;
+       text-decoration: none;  
+}
+
+h4 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       font-size: 44px;
+       margin-top: -40px;
+}
+
+h2 {
+       color: #D1BCA1;
+       font-family: 'LeagueGothic';      
+       font-size: 48px;
+       margin: 28px;
+       line-height: 10px; 
+       text-transform: uppercase;
+}
+
+h3 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       font-size: 28px;   
+}
+
+h3 img {
+       padding: 3px;
+}
+
+p {
+       color: #fff;
+       font-family: 'Helvetica Neue', sans-serif;
+       font-size: 16px;
+}
+
+a {
+       color: #D1BCA1;
+}
+
+a img {
+       outline: none;
+       border: none;
+}
+
+ul {
+       margin-left: -40px;
+}
+
+
+li {
+       display: inline;
+       padding: 10px;
+}
+
+#about p, #team p, #festivals p, #reviews p, #press p, #awards p {
+       text-align: left;
+}
+
+/* Slider */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides {
+    margin: 0 auto;
+}
+.rslides_container {
+    float: left;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+}
+.centered-btns_nav {
+    background: url("themes.gif") no-repeat scroll left top transparent;
+    height: 61px;
+    left: 0;
+    margin-top: -45px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    top: 50%;
+    width: 38px;
+    z-index: 3;
+}
+.centered-btns_nav:active {
+    opacity: 1;
+}
+.centered-btns_nav.next {
+    background-position: right top;
+    left: auto;
+    right: 0;
+}
+.transparent-btns_nav {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    height: 91%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 48%;
+    z-index: 3;
+}
+.transparent-btns_nav.next {
+    left: auto;
+    right: 0;
+}
+.large-btns_nav {
+    background: url("themes.gif") no-repeat scroll left 50% #000000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 38px;
+    z-index: 3;
+}
+.large-btns_nav:active {
+    opacity: 1;
+}
+.large-btns_nav.next {
+    background-position: right 50%;
+    left: auto;
+    right: 0;
+}
+.centered-btns_nav:focus, .transparent-btns_nav:focus, .large-btns_nav:focus {
+    outline: medium none;
+}
+.centered-btns_tabs, .transparent-btns_tabs, .large-btns_tabs {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+.centered-btns_tabs li, .transparent-btns_tabs li, .large-btns_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 5px;
+}
+.centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
+    display: inline-block;
+    height: 9px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 9px;
+}
+.centered-btns_here a, .transparent-btns_here a, .large-btns_here a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+}
+
+/* End Slider */
+
+/* Media Query */
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap 480px */
+
+/* Small devices (phones, 600px and up) */
+@media screen and (min-width: 600px){
+
+h1 {
+       font-size: 180px;
+}
+       
+h4 {
+       margin-top: -30px;
+       line-height: 0px;
+       font-size: 40px;       
+}
+       
+}
+
+.center {
+       font-size: 12px;
+       margin-top: -12px;
+       padding-left: 255px;
+}
+
+.photo_caption {
+       color: white;
+       font-size: 16px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        
+	.background {
+		width: 768px;	
+	}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+        
+	.background {
+		width: 1000px;
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+        
+	.background {
+		width: 1200px;	
+	}
+
+}
+
+/* Media Query */

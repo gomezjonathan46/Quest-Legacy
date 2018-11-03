@@ -1,0 +1,940 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('fonts/league_gothic-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/league_gothic-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+	url('fonts/league_gothic-webfont.woff') format('woff'), /* Modern Browsers */
+    url('fonts/league_gothic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('fonts/league_gothic-webfont.svg#webfont3nLbXkSC') format('svg'); /* Legacy iOS */
+
+}
+
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v8/MwQ5bhbm2POE2V9BPbh5uGM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Mobile First Small devices (phones, 320px and up) */
+
+body {
+        background: #000;
+}
+
+.wrapper {
+       width: 320px;
+       margin: 0px auto;
+       text-align: center;
+}
+
+.title {
+       width: 320px;
+       height: 141px;
+       margin-top: -20px;
+}
+
+.navbar {
+       background: black;
+       border: none;
+       color: #D1BCA1;
+       font-family: 'LeagueGothic';
+       text-decoration: none;
+       text-transform: uppercase; 
+       font-size: 24px;
+}
+
+.navbar li, a {
+       padding: 0px;
+       color: #D1BCA1 !important;
+}
+
+.navbar-collapse {
+    background: black;
+
+}
+
+.vimeo { 
+       width: 310px;
+       height: 220px;
+}
+
+.iTunes {
+        width: 300px; 
+        height: 86px;  
+       }  
+
+.poster {
+       width: 300px;
+       height: 444px;    
+}
+
+.center, .photo_caption { 
+       font-size: 12px;       
+       text-align: center !important;
+}
+
+.center {
+       font-style: italic;
+}
+
+.dirNote {
+       text-align: left;
+}
+
+.dirNoteFin {
+       text-align: left;
+       margin-bottom: 40px;
+}
+
+.selectReviews {
+       margin-top: 100px;
+       margin-bottom: 10px;
+}
+
+.review p {
+       font-family: 'Abel', 'LeagueGothic';
+       font-size: 19px;
+       font-style: italic;
+       text-align: center;
+       margin-top: 30px;
+       margin-left: 18px;
+       width: 300px;
+}
+
+.pressLogo img{
+       margin-left: 40px;
+       margin-top: 6px;
+       transform: scale(1.2);
+}
+
+.pressLogo img:hover{
+       opacity: .5;
+}
+
+.pressLogo2 img{
+       margin-left: 40px;
+       margin-top: 6px;
+}
+
+.pressLogo2 img:hover{
+       opacity: .5;
+}
+
+
+
+.pressLink {
+       margin-left: 40px;
+}
+
+#press p {
+        margin-top: 24px;        
+}
+
+#press h2 {
+    margin-bottom:36px;        
+     
+}
+
+#awards h2 {
+    margin-top: 40px;   
+    margin-bottom:32px;        
+     
+}
+
+.festList {
+ margin-left: 20px;      
+}
+
+.indent {
+       margin-left: 50px;
+}
+
+.mailingList {
+       width: 320px;
+       height: 1000px;
+}
+
+.footerLogos { 
+       margin-top: 0px;
+       width: 320px;
+       height: 31px;
+}
+
+h1 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       font-size: 120px;
+       line-height: 0px;
+}
+
+h1 a {
+       color: #fff;
+       text-decoration: none;  
+}
+
+
+
+h2 {
+       color: #D1BCA1;
+       font-family: 'LeagueGothic';      
+       font-size: 42px;
+       margin: 20px;
+       margin-top: 26px;
+       line-height: 10px; 
+       text-transform: uppercase;
+       text-align: center;
+}
+
+h3, h4 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       text-align: center;  
+}
+
+h3 {
+        font-size: 28px;  
+       
+}
+
+h4 {
+        font-size: 20px;        
+}
+
+
+
+h3 img {
+       padding: 3px;
+}
+
+
+p {
+       color: #fff;
+       font-family: 'Helvetica Neue', sans-serif;
+       font-size: 16px;
+       margin-top: 10px;
+       margin-left: 10px;
+       margin-right: 10px;
+}
+
+a {
+       color: #D1BCA1;
+}
+
+a:hover {
+       color: #999 !important;;
+}
+
+a img {
+       outline: none;
+       border: none;
+}
+
+ul {
+       margin-left: -40px;
+}
+
+
+li {
+       display: inline;
+       padding: 10px;
+}
+
+#about p, #team p, #festivals p, #reviews p, #press p, #awards p {
+       text-align: left;
+}
+
+footer {
+       height: 20px;
+}
+
+/* Fixed Images */
+
+.fixed1 {
+    position:relative;
+    background-image: url("fixed/QuestCrew2.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    overflow: hidden;
+    min-height:480px;
+       
+}
+
+.fixed2 p {
+       padding-top: 80px;
+       margin-bottom: 80px;
+       text-shadow: 1px 1px black;
+}
+
+
+.fixed3 img  {
+       width: 100%;
+       height: auto;       
+       margin-top: 10px;
+}
+
+.fixed4 img  {
+       width: 100%;
+       height: auto;
+       margin-top: 10px;
+
+}
+
+.fixed5 {
+    position:relative;
+    background-image: url("fixed/QMaPJ.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 720px;
+    overflow: hidden;
+    min-height:480px;
+}
+
+/* Slider */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides {
+    margin: 0 auto;
+}
+.rslides_container {
+    float: left;
+    margin: -8px 0 26px;
+    position: relative;
+    width: 100%;
+}
+.centered-btns_nav {
+    background: url("themes.gif") no-repeat scroll left top transparent;
+    height: 61px;
+    left: 0;
+    margin-top: -45px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    top: 50%;
+    width: 38px;
+    z-index: 3;
+}
+.centered-btns_nav:active {
+    opacity: 1;
+}
+.centered-btns_nav.next {
+    background-position: right top;
+    left: auto;
+    right: 0;
+}
+.transparent-btns_nav {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    height: 91%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 48%;
+    z-index: 3;
+}
+.transparent-btns_nav.next {
+    left: auto;
+    right: 0;
+}
+.large-btns_nav {
+    background: url("themes.gif") no-repeat scroll left 50% #000000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 38px;
+    z-index: 3;
+}
+.large-btns_nav:active {
+    opacity: 1;
+}
+.large-btns_nav.next {
+    background-position: right 50%;
+    left: auto;
+    right: 0;
+}
+.centered-btns_nav:focus, .transparent-btns_nav:focus, .large-btns_nav:focus {
+    outline: medium none;
+}
+.centered-btns_tabs, .transparent-btns_tabs, .large-btns_tabs {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+.centered-btns_tabs li, .transparent-btns_tabs li, .large-btns_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 5px;
+}
+.centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
+    display: inline-block;
+    height: 9px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 9px;
+}
+.centered-btns_here a, .transparent-btns_here a, .large-btns_here a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+}
+
+/* End Slider */
+
+/* Media Query */
+
+/* Small devices (phones, 414px and up) */
+
+@media screen and (min-width: 414px){
+ 
+.wrapper{
+       width: 414px;
+       } 
+       
+.title {
+       width: 414px;
+       height: 182px;
+       margin-top: -20px;
+}       
+
+.vimeo { 
+       width: 414px;
+       height: 234px;
+}
+
+       
+.review p {
+       margin-left: 22px;
+       width: 380px;
+}       
+       
+/* Fixed Images */
+
+.fixed1 {
+       min-height: 400px;       
+}
+
+.fixed2 {
+    background-size: 800px;
+}
+
+.fixed5 {
+    background-size: 850px;
+}          
+       
+}       
+
+
+/* Small devices (phones, 480px and up) */
+
+@media screen and (min-width: 480px){
+       
+.wrapper {
+       width: 480px;
+}
+
+.title {
+       width: 480px;
+       height: 211px;
+}
+
+.vimeo { 
+       width: 460px;
+       height: 310px;
+}
+       
+.iTunes {
+        width: 400px; 
+        height: 113px;  
+       }       
+
+.poster {
+       width: 300px;
+       height: 444px;    
+}
+
+.center { 
+font-size: 14px;       
+text-align: center !important;;
+}
+
+.photo_caption {
+       color: #fff;
+}
+
+.review p{
+       font-size: 22px;
+       margin-left: 20px;
+       margin-right: 16px;
+       width: 420px;
+}
+       
+.pressLogo img {
+       transform: scale(1.4); 
+       margin-left: 80px;
+       margin-top: 14px;
+       }       
+
+.festList {
+ margin-left: 20px;      
+}
+
+.indent {
+       margin-left: 50px;
+}
+
+.mailingList {
+       width: 480px;
+       height: 920px;
+} 
+
+ h1 {
+       color: #fff;
+       font-family: 'LeagueGothic';
+       font-size: 120px;
+       line-height: 0px;
+}
+
+h1 a {
+       color: #fff;
+       text-decoration: none;  
+}
+
+h2 {
+     
+       font-size: 60px;
+       margin: 20px;
+       margin-top: 50px;
+       line-height: 10px; 
+}
+
+h3 {
+
+       font-size: 34px;  
+}
+
+h3 img {
+       padding: 3px;
+}
+
+h4 {
+        font-size: 26px;  
+               
+       }
+       
+       
+ul {
+       margin-left: -40px;
+}
+
+
+li {
+       display: inline;
+       padding: 10px;
+}       
+    
+.footerLogos { 
+       margin-top: 0px;
+       width: 480px;
+       height: 47px;
+}   
+       
+/* Fixed Images */
+
+.fixed1 {
+    background-size: cover;
+       
+}
+
+.fixed2 {
+    background-size: cover;
+}
+
+.fixed5 {
+    background-size: cover;
+    min-height:480px;
+}       
+       
+       
+}
+
+
+/* Small devices (tablets, 660px and up) */
+@media screen and (min-width: 660px){
+             
+.wrapper {
+       background: black;
+       width: 660px;
+}  
+       
+.title {
+       width: 660px;
+       height: 290px;
+}         
+       
+.vimeo { 
+       width: 660px;
+       height: 371px;
+       }
+
+.poster {
+       width: 500px;
+       height: 740px;        
+}
+
+.review p{
+       font-size: 26px;
+       margin-left: 26px;
+       margin-right: 16px;
+       width: 600px;
+       text-shadow: 2px 2px black;
+}
+       
+.pressLogo img {
+       transform: scale(1.6); 
+       margin-left: 100px;
+       margin-top: 18px;
+       }  
+       
+.festList {
+ margin-left: 20px;      
+}
+
+.indent {
+       margin-left: 50px;
+}
+
+.mailingList {
+       width: 660px;
+       height: 880px;
+}
+
+.footerLogos { 
+       width: 660px;
+       height: 63px;
+}
+
+       /* Fixed Images */      
+   
+.fixed2 {
+       min-height: 1000px;       
+}                 
+          
+.fixed5 {
+       min-height: 1000px;       
+} 
+
+} 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+        
+.wrapper {
+       width: 768px;
+}   
+       
+.title {
+       width: 768px;
+       height: 338px;
+       margin-top: -28px;
+       
+}  
+
+.navbar a{
+       font-size: 26px;
+       margin-left: -12px;
+}         
+       
+          
+.vimeo { 
+       width: 768px;
+       height: 432px;
+}  
+       
+.poster {
+       width: 500px;
+       height: 740px;        
+}
+
+.selectReviews {
+       margin-bottom: 100px;
+}       
+       
+.review p{
+       font-size: 26px;
+       margin-left: 38px;
+       margin-right: 16px;
+       width: 700px;
+       text-shadow: 2px 2px black;
+}
+       
+.pressLogo img {
+       transform: scale(1.8); 
+       margin-left: 140px;
+       margin-top: 22px;
+       
+       }  
+       
+.festList {
+ margin-left: 20px;      
+}
+
+.indent {
+       margin-left: 50px;
+}
+
+.mailingList {
+       width: 768px;
+       height: 830px;
+}
+
+.footerLogos { 
+       width: 768px;
+       height: 73px;
+}  
+       
+/* Fixed Images */
+
+.fixed1 {
+    background-attachment: fixed;       
+    position:relative;
+    background-image: url("fixed/QuestCrew2.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height:700px;
+       
+}
+
+.fixed2 {
+    background-attachment: fixed;
+    position:relative;
+    background-image: url("fixed/QuestFam_fixed3.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height:1000px;
+}
+
+.fixed2 p {
+       padding-top: 200px;
+       margin-bottom: 300px;
+       text-shadow: 1px 1px black;
+}
+
+.fixed3 {
+    background-attachment: fixed;
+    position:relative;
+    background-image: url("fixed/Price_fixed.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height:1800px;
+}
+
+.fixed3 img  {
+       width: 100%;
+       height: auto;       
+       margin-top: 600px;
+}
+
+.fixed4 {
+    background-attachment: fixed;
+    position:relative;
+    background-image: url("fixed/QuestStudio_fixed.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height:1400px;
+       
+}
+
+.fixed4 img  {
+       width: 100%;
+       height: auto;
+       margin-top: 600px;
+
+}
+
+.fixed5 {
+    background-attachment: fixed;
+    position:relative;
+    background-image: url("fixed/QMaPJ.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height:1000px;
+}       
+       
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+       
+body {
+background: black url("QUEST_BG2400.jpg") top center no-repeat;       
+       }           
+        
+.wrapper {
+       width: 992px;
+}   
+
+      
+.navbar a{
+       font-size: 34px;
+       margin-left: -6px;
+       margin-top: 20px;
+}     
+       
+   .collapse {
+              background: transparent;
+       }          
+
+.title {
+       width: 992px;
+       height: 436px;
+       margin-top: -30px;
+       
+}    
+       
+           
+.vimeo { 
+       width: 992px;
+       height: 558px;
+}        
+       
+.review p{
+       font-size: 32px;
+       margin-left: 82px;
+       margin-right: 16px;
+       width: 850px;
+       text-shadow: 2px 2px black;
+}
+       
+.pressLogo img {
+       transform: scale(2.2); 
+       margin-left: 170px;
+       margin-top: 28px;
+       
+       }  
+       
+
+.awardsList {
+       margin-left: 120px;
+       }     
+       
+.festList { 
+       margin-left: 240px;
+      
+       }       
+       
+.footerLogos { 
+       width: 992px;
+       height: 95px;
+}   
+       
+/* Fixed Images */
+
+.fixed3 {
+       min-height: 2000px;       
+}       
+          
+.fixed3 img  {      
+       margin-top: 700px;
+}          
+      
+.fixed4 {
+       min-height: 2000px;       
+}       
+          
+.fixed4 img  {      
+       margin-top: 700px;
+}         
+       
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+       
+.wrapper {
+       width: 992px;
+}   
+       
+            
+       .collapse {
+              background: transparent;
+       }       
+
+       
+       
+      
+}
+
+/* Large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {
+        
+.wrapper {
+       width: 992px;
+}   
+  
+       
+
+}
+
+/* Media Query */
